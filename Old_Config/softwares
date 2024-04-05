@@ -1,0 +1,54 @@
+//softwares after # is not necessary
+brightnessctl
+ttf-firacode-nerd
+python-pillow
+noto-fonts-emoji
+highlight
+grimblast-git
+cliphist
+libnotify
+ffmpegthumbnailer
+xdg-desktop-portal-hyprland
+atool
+# gdb
+# jdk-openjdk
+# ntfs-3g
+# dotnet-sdk
+# chntpw​​
+
+neovim
+kitty
+waybar
+rofi
+dunst
+mpv
+kvantum
+qt5ct
+qt6ct
+qt5-wayland
+qt6-wayland
+kvantum-qt5
+libva
+libva-nvidia-driver-git
+papirus-icon-theme
+unzip
+zip
+go-musicfox-git
+ranger
+nwg-look
+
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+pavucontrol
+
+bluez
+bluez-utils  //sudo systemctl start bluetooth \n sudo systemctl enable bluetooth
+blueman
+
+wttrbar
+hyprlock
+hypridle
+swww
+wlogout
