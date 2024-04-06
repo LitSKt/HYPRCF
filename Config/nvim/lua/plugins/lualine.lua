@@ -6,7 +6,8 @@ return {
       options = {
         theme = 'catppuccin',
         section_separators = { left = '', right = '' },
-        component_separators = '',
+        component_separators = { left = '>', right = '<' },
+        globalstatus = true,
       },
       sections = {
         lualine_a = { { 'mode', separator = { left = '', right = '' }, right_padding = 2 } },
