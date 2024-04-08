@@ -1,3 +1,13 @@
+format = """
+$all$os\
+$directory\
+$line_break[└─ ](bold green)$character\
+"""
+
+right_format = """
+$time\
+"""
+
 palette = "catppuccin_mocha"
 
 [aws]
@@ -162,15 +172,31 @@ symbol = " "
 [zig]
 symbol = " "
 
+[os]
+disabled = false
+style = "bg:base fg:maroon"
+
+[time]
+disabled = false
+# style = "bg:base fg:teal"
+time_format = "%R"
+format = '[[  $time ](fg:peach bg:base)]($style)'
+
 [character]
-success_symbol = "[[](green) ❯](maroon)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[[](green) ](bold maroon)"
+error_symbol = "[](bole red)"
+vimcmd_symbol = "[](bold green)"
 
 [directory]
 truncation_length = 4
 style = "bold sapphire"
-read_only = " 󰌾"
+
+[directory.substitutions]
+"Documents" = " 󰈙 "
+"Downloads" = "  "
+"Music" = " 󰝚 "
+"Pictures" = "  "
+"Developer" = " 󰲋 "
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

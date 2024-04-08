@@ -148,6 +148,7 @@ rules = [
 	{ name = "Pictures/"   , text = "" },
 	{ name = "Public/"     , text = "" },
 	{ name = "Videos/"     , text = "" },
+	{ name = "Developer/"  , text = "󰲋" },
 
 	# Default
 	{ name = "*" , text = "" },
