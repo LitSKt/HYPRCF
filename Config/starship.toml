@@ -1,5 +1,5 @@
 format = """
-$all$os\
+[┌─](bold green)$os$all\
 $directory\
 $line_break[└─ ](bold green)$character\
 """
