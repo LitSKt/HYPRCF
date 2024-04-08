@@ -1,0 +1,350 @@
+* {
+    font-family: 'FiraCode Nerd Font';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+/* Colors */
+
+@define-color barbg rgba(255, 255, 255, 0);
+@define-color litebg #C5FFF8;
+@define-color abtu #5FBDFF;
+@define-color txt #7B66FF;
+@define-color hbtu #FF90BC;
+@define-color tolbg #96EFFF;
+
+/* Waybar background */
+
+window#waybar {
+    background: @barbg;
+}
+
+tooltip {
+    background: @barbg;
+}
+
+tooltip label {
+    color: @hbtu;
+    text-shadow: none;
+    font-size: 14px;
+}
+
+/* Workspace */
+
+#workspaces {
+    background: @litebg;
+    color: @abtu;
+    margin: 8px 0px 8px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 18px;
+    text-shadow: none;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: @litebg;
+    background: @abtu;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.8s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: @txt;
+    border-radius: 14px;
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.6s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: @hbtu;
+    border-radius: 14px;
+    color: @litebg;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.6s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#custom-apps {
+    border-radius: 18px 0 0 18px;
+    background: @litebg;
+    color: @abtu;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    padding-left: 16px;
+}
+
+/* Taskbar */
+
+#taskbar {
+    background: @litebg;
+    margin: 8px 0px 8px 0px;
+}
+
+#taskbar button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 14px;
+    margin-left: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.8s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.active {
+    border-radius: 14px;
+    background: @abtu;
+    margin-left: 6px;
+    padding-left: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 16px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.6s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    border-radius: 14px;
+    background: @hbtu;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.6s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+/* Hyprland Window */
+
+#window {
+    background: @litebg;
+    border-radius: 0px 18px 18px 0px;
+    margin: 8px 0px 8px 0px;
+    padding-right: 10px;
+    color: @abtu;
+}
+
+/* Modules */
+
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#idle_inhibitor,
+#memory,
+#disk,
+#battery,
+#temperature,
+#backlight,
+#custom-power,
+#custom-screenshot,
+#custom-clipboardclear,
+#custom-wallpapers
+{
+    color: @txt;
+    background-color: @litebg;
+    border-width: 0px;
+    margin: 8px 0px 8px 0px;
+    font-size: 19px;
+    text-shadow: none;
+}
+
+#clock {
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-left: 20px;
+    background-color: @barbg;
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 18px;
+    border-color: @hbtu;
+    color: @tolbg;
+    font-size: 15px;
+}
+
+#battery {
+    border-radius: 0px 18px 18px 0px;
+    font-size: 17px;
+    padding-bottom: 1px;
+    padding-right: 15px;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+
+#memory {
+    font-size: 21px;
+    padding-right: 4px;
+    border-radius: 18px 0px 0px 18px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-right: -4px;
+}
+
+#disk {
+    font-size: 18px;
+    padding-right: 2px;
+}
+
+#backlight {
+    font-size: 17px;
+    padding-top: 1px;
+}
+
+#network {
+    background-color: @barbg;
+    color: @hbtu;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+#temperature {
+    padding-right: 9px;
+    font-size: 16px;
+}
+
+#pulseaudio {
+    background-color: @barbg;
+    color: @hbtu;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+#pulseaudio.microphone {
+    background-color: @barbg;
+    color: @hbtu;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-right: 6px;
+}
+
+#tray {
+    background: @txt;
+    border-radius: 18px;
+    margin-left: 10px;
+    padding-left: 12px;
+    padding-right: 14px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#idle_inhibitor {
+    border-radius: 18px 0px 0px 18px;
+    background-color: @abtu;
+    color: @litebg;
+    border-color: @litebg;
+    border-width: 7px 0px 7px 7px;
+    border-style: solid;
+    font-size: 16px;
+    margin-left: 10px;
+    padding-left: 13px;
+}
+
+#idle_inhibitor.activated {
+    border-radius: 18px 0px 0px 18px;
+    border-width: 7px 0px 7px 7px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: @litebg;
+    margin-left: 10px;
+    background-color: @abtu;
+    color: @litebg;
+    padding-left: 13px;
+}
+
+#custom-power {
+    background: @txt;
+    color: white;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius:18px;
+    padding-left: 2px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+#custom-wallpapers {
+    background: @abtu;
+    border-width: 7px 7px 7px 0px;
+    border-style: solid;
+    color: @litebg;
+    padding-left: 3px;
+    padding-top: 1px;
+    border-color: @litebg;
+    padding-right: 7px;
+    border-radius: 0px 18px 18px 0px;
+    font-size: 14px;
+}
+
+#custom-screenshot {
+    background: @abtu;
+    border-style: solid;
+    border-color: @litebg;
+    border-width: 7px 0px 7px 0px;
+    font-size: 15px;
+    color: @litebg;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+#custom-clipboardclear {
+    background: @abtu;
+    border-style: solid;
+    border-color: @litebg;
+    border-width: 7px 0px 7px 0px;
+    color: @litebg;
+    font-size: 17px;
+    padding-left: 7px;
+    padding-top: 1px;
+}
+
+#custom-weather {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 1px;
+    margin-left: 10px;
+    background-color: @barbg;
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 18px;
+    border-color: @hbtu;
+    color: @tolbg;
+    font-size: 15px;
+}
