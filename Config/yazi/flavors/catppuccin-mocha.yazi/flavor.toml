@@ -20,14 +20,14 @@ marker_marked   = { fg = "#f9e2af", bg = "#f9e2af" }
 marker_selected = { fg = "#89b4fa", bg = "#89b4fa" }
 
 # Tab
-tab_active   = { fg = "#1e1e2e", bg = "#cdd6f4" }
+tab_active   = { fg = "#1e1e1e", bg = "#cdd6f4" }
 tab_inactive = { fg = "#cdd6f4", bg = "#45475a" }
 tab_width    = 1
 
 # Count
-count_copied   = { fg = "#1e1e2e", bg = "#a6e3a1" }
-count_cut      = { fg = "#1e1e2e", bg = "#f38ba8" }
-count_selected = { fg = "#1e1e2e", bg = "#89b4fa" }
+count_copied   = { fg = "#1e1e1e", bg = "#a6e3a1" }
+count_cut      = { fg = "#1e1e1e", bg = "#f38ba8" }
+count_selected = { fg = "#1e1e1e", bg = "#89b4fa" }
 
 # Border
 border_symbol = "│"
@@ -44,9 +44,9 @@ separator_close = ""
 separator_style = { fg = "#45475a", bg = "#45475a" }
 
 # Mode
-mode_normal = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
-mode_select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
-mode_unset  = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
+mode_normal = { fg = "#1e1e1e", bg = "#89b4fa", bold = true }
+mode_select = { fg = "#1e1e1e", bg = "#a6e3a1", bold = true }
+mode_unset  = { fg = "#1e1e1e", bg = "#f2cdcd", bold = true }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
