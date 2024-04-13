@@ -2454,6 +2454,6 @@ background_opacity 1
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# VSCode_Dark
 include current-theme.conf
 # END_KITTY_THEME
