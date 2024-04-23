@@ -149,6 +149,7 @@ rules = [
 	{ name = "Public/"     , text = "" },
 	{ name = "Videos/"     , text = "" },
 	{ name = "Developer/"  , text = "󰲋" },
+	{ name = "Screenshots/", text = "󰹑" },
 
 	# Default
 	{ name = "*" , text = "" },

@@ -64,7 +64,7 @@ keymap = [
 	{ on = [ "<Enter>" ],   run = "open",                       desc = "Open the selected files" },
 	{ on = [ "<C-Enter>" ], run = "open --interactive",         desc = "Open the selected files interactively" },
 	{ on = [ "y" ],         run = [ "yank", '''
-	shell --confirm 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list'
+	shell --confirm 'echo "$@" | xclip -i -selection clipboard -t text/uri-list'
 ''' ],                                                        desc = "Copy the selected files" },
 	{ on = [ "Y" ],         run = "unyank",                     desc = "Cancel the yank status of files" },
 	{ on = [ "x" ],         run = "yank --cut",                 desc = "Cut the selected files" },
