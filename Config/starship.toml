@@ -174,7 +174,7 @@ symbol = " "
 
 [os]
 disabled = false
-style = "bg:base fg:maroon"
+style = "bg:base fg:sapphire"
 
 [time]
 disabled = false
@@ -183,13 +183,13 @@ time_format = "%R"
 format = '[[  $time ](fg:peach bg:base)]($style)'
 
 [character]
-success_symbol = "[[](green) ](bold maroon)"
+success_symbol = "[[](red)  > ](bold peach)"
 error_symbol = "[](bole red)"
 vimcmd_symbol = "[](bold green)"
 
 [directory]
 truncation_length = 4
-style = "bold sapphire"
+style = "bold yellow"
 
 [directory.substitutions]
 "Documents" = " 󰈙 "
