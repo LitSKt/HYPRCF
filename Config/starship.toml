@@ -46,8 +46,8 @@ symbol = " "
 [git_branch]
 symbol = " "
 
-[git_commit]
-tag_symbol = "󰜚"
+[git_status]
+staged = '[++\($count\)](green)'
 
 [golang]
 symbol = " "
