@@ -47,7 +47,15 @@ symbol = " "
 symbol = " "
 
 [git_status]
+conflicted = 'x'
+ahead = '<'
+behind = '>'
+diverged = '#'
+untracked = '*'
+stashed = ''
 staged = '[++\($count\)](green)'
+renamed = 'R'
+deleted = '󰗨'
 
 [golang]
 symbol = " "
