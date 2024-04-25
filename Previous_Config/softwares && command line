@@ -64,3 +64,6 @@ wl-clipboard
 ## gnome
 //ln -s /usr/bin/kitty /usr/bin/xdg-terminal-exec
 //gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
+///etc/environment
+//QT_QPA_PLATFORMTHEME=qt6ct
+//QT_QPA_PLATFORM=xcb/
