@@ -19,6 +19,8 @@ atool
 # yazi
 # starship
 # npm
+
+## gnome X11
 # xclip
 
 neovim
@@ -57,3 +59,8 @@ hyprlock
 hypridle
 swww
 wlogout
+wl-clipboard
+
+## gnome
+//ln -s /usr/bin/kitty /usr/bin/xdg-terminal-exec
+//gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
