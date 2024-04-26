@@ -67,3 +67,4 @@ wl-clipboard
 ///etc/environment
 //QT_QPA_PLATFORMTHEME=qt6ct
 //QT_QPA_PLATFORM=xcb/
+//xdg-mime default yazi.desktop inode/directory
