@@ -64,7 +64,9 @@ wl-clipboard
 ## gnome
 //ln -s /usr/bin/kitty /usr/bin/xdg-terminal-exec
 //gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
-///etc/environment
+///*etc/environment
 //QT_QPA_PLATFORMTHEME=qt6ct
-//QT_QPA_PLATFORM=xcb/
+//QT_QPA_PLATFORM=xcb
+//GBM_BACKEND=nvidia-drm
+//__GLX_VENDOR_LIBRARY_NAME=nvidia*/
 //xdg-mime default yazi.desktop inode/directory
